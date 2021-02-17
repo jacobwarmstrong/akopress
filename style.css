@@ -24,3 +24,17 @@ Text Domain: akopress
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+.sr-only {
+    display: none;
+}
+
+input[type="text"], input[type="email"], textarea, .form-check, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.ako-lead-form button {
+    background-color: #ff9900;
+}
