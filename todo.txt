@@ -1,0 +1,6 @@
+What I need to do
+___________________
+1. get rid of the custom post type
+2. move all the data into regular pages? There is no data??
+3. the images will still have categories, so just match the page slug with the category? and spit the info out that way
+    b. make my gallery a plugin? and attach to each page?
