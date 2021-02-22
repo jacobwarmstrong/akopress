@@ -66,14 +66,14 @@ $previousImg = $data['previous_image'];
                 the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                 <p><?php echo wp_get_attachment_caption( ); ?></p>
                 <div class="my-3 d-flex flex-row- flex-wrap">
-                    <a href="/sign-products/<?php echo $category->slug; ?>" class="btn btn-secondary"><?php echo ucwords($category->name); ?></a>
+                    <a href="/<?php echo $category->slug; ?>" class="btn btn-secondary"><?php echo ucwords($category->name); ?></a>
                 </div>
-                <div class="my-3 d-flex flex-row- flex-wrap">
+                <!---<div class="my-3 d-flex flex-row- flex-wrap">
                     <span class="mr-2">Tags: </span>
-                    <?php foreach ($tags as $tag) : ?>
-                    <a href="/sign-products/<?php echo $category->slug; ?>/?tag=<?php echo $tag->term_id; ?>" class="badge badge-pill badge-primary p-2 mr-2 mb-2"><?php echo $tag->name; ?></a>
-                    <?php endforeach; ?>
-                </div>
+                    <?php //foreach ($tags as $tag) : ?>
+                    <a href="<?php// echo $category->slug; ?>?tag=<?php //echo $tag->term_id; ?>" class="badge badge-pill badge-primary p-2 mr-2 mb-2"><?php //echo $tag->name; ?></a>
+                    <?php //endforeach; ?>
+                </div>---->
             </div>
         </header><!-- .entry-header -->
         <!----/Current Image Info---->
