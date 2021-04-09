@@ -16,10 +16,11 @@ function akopress_scripts() {
     
     wp_enqueue_style( 'google-fonts-style', "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" );
     
-    //if page is work or sign product enqueue bootstrap for now
-    if(get_the_title() == 'Work' || get_post_type() == 'sign-products' ||  get_post_type() == 'attachment') {
-        wp_enqueue_style( 'bootstrap-style', "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" );
-    }
+    //I have bootstrap on all pages for now.. EXCEPT OUR WOOCOMMERCE PAGES AND CHECKOUT
+    if( is_checkout() == false ) {
+		wp_enqueue_style( 'bootstrap-style', "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" );
+	}
+        
     
     //bootstrap gallery related enqueues
     if ( get_post_type() == 'attachment' ) {
