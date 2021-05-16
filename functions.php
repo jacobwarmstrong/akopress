@@ -6,11 +6,9 @@ if ( ! defined( '_S_VERSION' ) ) {
 }
 
 function akopress_scripts() {
-
+    //load source sans pro from google fonts
     wp_enqueue_style( 'google-fonts-style', "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" );
-
 }
-
 add_action('wp_enqueue_scripts', 'akopress_scripts');
 
 add_action('wp_head', 'google_analytics_head', 20);
