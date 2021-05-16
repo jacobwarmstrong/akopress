@@ -6,12 +6,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 }
 
 function akopress_scripts() {
-    
-    //update jquery to 3.1.1
-    //required for custom image gallery. Consider dumping because generate press is against jquery apparantly
-    wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
-    
+
     wp_enqueue_style( 'google-fonts-style', "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" );
 
 }
