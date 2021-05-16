@@ -13,26 +13,6 @@ function akopress_scripts() {
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
     
     wp_enqueue_style( 'google-fonts-style', "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" );
-    
-    //I have bootstrap on all pages for now..
-        wp_enqueue_style( 'bootstrap-style', "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" );
-    
-    //bootstrap gallery related enqueues
-    if ( get_post_type() == 'attachment' ) {
-        wp_enqueue_script( 'charmer-image-spinner', get_stylesheet_directory_uri() . '/js/image-loading-spinner.js', array('jquery'), _S_VERSION, true );
-    }
-    
-    wp_enqueue_script( 'bootstrap-js-popper', "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", array('jquery'), _S_VERSION, true );
-        
-    wp_enqueue_script( 'bootstrap-js', "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", array('jquery'), _S_VERSION, true );
-    
-    if ( get_post_type() == 'attachment' ) {
-        wp_enqueue_script( 'charmer-image-lightbox-hover', get_stylesheet_directory_uri() . '/js/image-lightbox.js', array('jquery'), _S_VERSION, true );
-    }
-    
-    if ( get_post_type() == 'sign-products' || get_the_title() == 'Work' ) {
-        wp_enqueue_script( 'charmer-thumbnail-scale', get_stylesheet_directory_uri() . '/js/thumbnail-scale-on-hover.js', array('jquery'), _S_VERSION, true );
-    }
 
 }
 
