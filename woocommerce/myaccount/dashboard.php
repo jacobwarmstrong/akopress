@@ -59,7 +59,7 @@ $allowed_html = array(
 <?php if ( strpos( do_shortcode('[woocommerce_member_active_plans]'), 'JE Dunn') ) {
     $product_cats = get_terms(array(
         'taxonomy' => 'product_cat',
-        'child_of' => 247
+        'child_of' => 245
     ));
     
     echo '<div class="container"><h1>JE Dunn Products</h1><div class="row">';
